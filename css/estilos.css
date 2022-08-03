@@ -8,11 +8,15 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    
+
 }
+
+
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-container);
@@ -42,6 +46,21 @@ body {
     z-index: -1;
 }
 
+.hero1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+   background-size: cover;
+   
+    z-index: -1;
+}
+
+
+
 /* Nav */
 
 /* Nav */
@@ -54,11 +73,13 @@ body {
 }
 
 .nav__title {
-    font-weight: 300;
+    font-weight:300;
 }
 
+
+
 .nav__link {
-    margin-left: auto;
+    margin-left: auto       ;
     padding: 0;
     display: grid;
     grid-auto-flow: column;
@@ -238,3 +259,118 @@ body {
 .footer__img{
     width: 30px;
 }
+
+/* Estilos del formulario */
+
+.formulario {
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+    position: relative;
+
+
+}      
+
+.formulario1 {
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3);
+    position: relative;
+
+
+}       
+
+.formulario__input, .formulario__label
+ {
+
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+
+
+    
+}
+.formulario__input {
+
+    padding:20px;
+    background: rgba(212, 197, 199, 0.5);
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom:40px;
+
+
+
+}
+
+.formulario input :focus {
+    outline: 1px solid rgba (0.0.0.0.7);
+
+}
+
+.formulario__input:focus  + .formulario__label {
+    margin-top: -135px;
+
+}
+
+.formulario__label{
+
+    padding-left: 15px;
+    position: absolute; 
+    margin-top: -85px;
+    z-index: -20;
+    transition: all 0.2s;
+}
+
+.formulario__submit{
+    background:  rgba(0,0,0,0.7) ;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+
+
+}
+
+.botons {
+   
+    background-color: limegreen;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin-right: 10px;
+    font-size: 18px;
+    
+
+
+}
+
+.redir {
+
+   
+    background-color: orange;
+    border: none;
+    padding: 12px;
+    color: black;
+    margin-right: 10px;
+    font-size: 18px;
+
+
+
+}
+
+.contenedor{
+    display: flex;
+    justify-content:center;
+    padding: 35px;
+}
+
+.fijar {
+    margin-top:-135px;
+}
+
+
